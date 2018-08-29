@@ -1,5 +1,5 @@
-json.id @hammer.id
-json.name @hammer.name
-json.price @hammer.price
-json.image_url @hammer.image_url
-json.description @hammer.description
+json.player_id @hammer.id
+json.player_name @hammer.name
+json.transfer_price @hammer.price
+json.picture @hammer.image_url
+json.position @hammer.description
