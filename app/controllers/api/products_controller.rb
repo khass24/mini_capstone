@@ -1,11 +1,11 @@
 class Api::ProductsController < ApplicationController
-  def products_action
+  def hammer_action
     @hammer = Product.first
-    render 'products.json.jbuilder'
+    render 'first_hammer.json.jbuilder'
   end
 
-  def many_products_action
+  def many_hammers_action
     @hammers = Product.all
-    render 'many_products.json.jbuilder'
+    render 'many_hammers.json.jbuilder'
   end
 end
