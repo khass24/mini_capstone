@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   namespace :api do
-    get "/first_hammer" => "products#hammer_action"
-    get "/many_hammers" => "products#many_hammers_action"
+    get "/hammers" => 'products#index'
+    get "/hammers/:id" => 'products#show'
+    post "/hammers" => 'products#create'
   end
 end
