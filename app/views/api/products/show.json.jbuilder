@@ -1,5 +1,1 @@
-json.id @hammer.id
-json.name @hammer.name
-json.price @hammer.price
-json.image_url @hammer.image_url
-json.description @hammer.description
+json.partial! @product, partial: 'product', as: :product
