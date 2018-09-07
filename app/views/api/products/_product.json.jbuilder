@@ -12,3 +12,7 @@ json.formatted do
   json.tax number_to_currency(product.tax)
   json.total number_to_currency(product.total)
 end  
+
+json.supplier do
+  json.partial! product.supplier, partial: 'api/suppliers/supplier', as: :supplier
+end
