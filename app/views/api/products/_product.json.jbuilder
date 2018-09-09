@@ -17,6 +17,6 @@ json.supplier do
   json.partial! product.supplier, partial: 'api/suppliers/supplier', as: :supplier 
 end
 
-json.image do
-  json.array! product.image, partial: 'api/images/image', as: :image
+json.images do
+  json.array! product.images, partial: 'api/images/image', as: :image
 end
