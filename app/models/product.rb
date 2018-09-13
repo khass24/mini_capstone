@@ -1,7 +1,4 @@
 class Product < ApplicationRecord
-  belongs_to :supplier
-  has_many :images
-
   validates :name, presence: true
   validates :name, uniqueness: true
 
@@ -14,6 +11,9 @@ class Product < ApplicationRecord
   validates :price, presence: true
   validates :price, numericality: { greater_than: 0 }
 
+  belongs_to :supplier
+  has_many :images
+  has_many :orders
 
   def is_discounted?
     price < 7000000
