@@ -7,7 +7,7 @@ json.tax product.tax
 json.total product.total
 json.supplier_id product.supplier_id
 
-json.formated do 
+json.formatted do 
   json.price number_to_currency(product.price)
   json.tax number_to_currency(product.tax)
   json.total number_to_currency(product.total)
@@ -20,3 +20,5 @@ end
 json.images do
   json.array! product.images, partial: 'api/images/image', as: :image
 end
+
+json.current_user current_user
