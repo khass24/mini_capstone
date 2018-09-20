@@ -4,11 +4,11 @@ Rails.application.routes.draw do
 
     post "/sessions" => "sessions#create"
 
-    get '/carted_products' => 'carted_products#index'
+    get "/carted_products" => "carted_products#index"
     post "/carted_products" => "carted_products#create"
 
     get '/orders' => 'orders#index'
-    post "/orders" => "orders#create"
+    post '/orders' => 'orders#create'
     
     get "/products" => 'products#index'
     post "/products" => 'products#create'

@@ -21,7 +21,7 @@ class Product < ApplicationRecord
   has_many :orders, through: :carted_products
 
   def is_discounted?
-    price < 7000000
+    price < 70
   end
 
   def tax
